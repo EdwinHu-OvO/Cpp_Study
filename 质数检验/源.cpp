@@ -9,7 +9,7 @@ void main() {
 		double dur;
 		char homo;
 		long long a, i = 1, b = 0;
-		cin >> a;
+		cin >> (long long)a;
 		cout << "Continue? y or n\n";
 		cin >> homo;
 		ts = clock();
@@ -32,7 +32,7 @@ void main() {
 		te = clock();
 		cout << "\n是否是质数:\n";
 		bool o=0;
-		b != 0 ? o = 1 : o;
+		b != 2 ? o = 0 : o=1;
 		cout << boolalpha << o<<endl;
 		dur = te - ts;
 		cout << "有" << b << "个约数\nTime:"<< dur/1000 << "s" ;//1 and itself

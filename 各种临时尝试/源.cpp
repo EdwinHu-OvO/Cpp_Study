@@ -1,12 +1,11 @@
 #include<iostream>
-#include<iomanip>
 using namespace std;
-static int *p;
-void main()
+int main()
 {
-	int a = 10;
-	p = &a;
-	char sb[] = "sb";
-	char *bb = "sb";
-	system("pause");
+	int a = 1;
+	const int * const ip = &a;
+	int * ip2 = (int *)ip;
+	*ip2 = 2;
+	//*ip = 1;
+	return 0;
 }
